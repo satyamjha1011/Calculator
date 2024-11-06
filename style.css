@@ -1,0 +1,78 @@
+/* Importing the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+/* Universal selector to reset margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Poppins font style with extra-light italic */
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* Body styling: full-screen layout, center alignment, background gradient */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+/* Main calculator container styling */
+.calculator {
+    border: 1px solid #717377;
+    padding: 100px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+/* Input field styling */
+input {
+    width: 56%;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: #babec5;
+    box-shadow: 0px, 3px, 15px rgba(84, 84, 84, 0.1); /* Box shadow for input */
+    font-size: 40px;
+    text-align: right; /* Aligns text to the right for calculator display */
+    cursor: pointer;
+    color: #ffffff; /* White text color */
+}
+
+/* Placeholder styling for the input field */
+input::placeholder {
+    color: #ffffff;
+}
+
+/* General button styling */
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%; /* Round button shape */
+    background: transparent;
+    color: #ffffff; /* White text color */
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1); /* Light shadow for 3D effect */
+    cursor: pointer;
+}
+
+/* Special styling for the equals button */
+.equalbtn {
+    background-color: #fb7c14; /* Distinct orange color */
+}
+
+/* Styling for operator buttons */
+.operator {
+    color: #6dee0a; /* Light green text color for operators */
+}
